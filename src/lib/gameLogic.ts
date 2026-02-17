@@ -3,7 +3,7 @@
 // Core functions for investment simulation
 // ============================================
 
-import { GAME_CONFIG } from './gameConfigs';
+import { GAME_CONFIG, ASSETS_DATA } from './gameConfigs';
 import type {
   Asset,
   Investment,
@@ -29,7 +29,7 @@ export function initializeGame(): GameState {
     currentDate: { ...GAME_CONFIG.startDate },
     gameSpeed: GAME_CONFIG.defaultGameSpeed,
     isPaused: true,
-    assets: [], // Load your assets here
+    assets: [...ASSETS_DATA], // Loads assets from gameConfigs
   };
 }
 

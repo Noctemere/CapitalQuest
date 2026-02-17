@@ -2,9 +2,9 @@
 // TYPE DEFINITIONS - CapitalQuest
 // ============================================
 
-export type AssetType = 'stock' | 'bond' | 'fund' | 'crypto';
+export type AssetType = 'Stock' | 'Bond' | 'Fund' | 'Crypto';
 
-export type RiskLevel = 'low' | 'medium' | 'high' | 'extreme';
+export type RiskLevel = 'Low' | 'Medium' | 'High' | 'Extreme';
 
 export interface Asset {
   id: string;
